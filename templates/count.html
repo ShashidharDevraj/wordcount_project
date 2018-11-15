@@ -1,0 +1,9 @@
+{% for word , count in sort %}
+
+<h1> {{word}} ::: {{ count}} </h1>
+
+{% endfor %}
+
+<a href="{% url 'home' %}">Home</a>
+<h2>You original text</h2> 
+{{ fulltext }}
